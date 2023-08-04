@@ -1,19 +1,19 @@
-﻿using System;
-
-namespace MyApp // Note: actual namespace depends on the project name.
+﻿﻿using System;
+public class Program
 {
-    public class Program
+     static void Main(string[] args)
     {
-        static void Main()
+        int valueOne;
+        int valueTwo=1;
+        
+        Console.WriteLine("Enter Number");
+        valueOne = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Multiplication Table of"+" "+valueOne);
+        while(valueTwo <= 20)
         {
-            int firstnumber;
-            int secondnumber;            
-            Console.WriteLine("Please Enter the First Number");
-            firstnumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please Enter the Second Number");
-            secondnumber = Convert.ToInt32(Console.ReadLine());  
-          
-            Console.WriteLine("Result is "+(firstnumber+secondnumber));
+            Console.WriteLine(valueOne+" x " +valueTwo+ " = "+(valueOne*valueTwo));
+            valueTwo++;
         }
     }
 }
